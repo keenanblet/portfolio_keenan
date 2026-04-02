@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-white h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-gray-1000 to-slate-900">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 px-8 py-4 flex justify-between items-center">
+        <span class="text-xl font-bold">Keenan Blet</span>
+        <ul class="flex gap-8 text-sm">
+            <li><a href="index.html" class="hover:text-gray-400 transition">Accueil</a></li>
+            <li><a href="skills.html" class="hover:text-gray-400 transition">Compétences</a></li>
+            <li><a href="project.html" class="hover:text-gray-400 transition">Projets</a></li>
+            <li><a href="contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENU DE LA PAGE ICI -->
+    <main class="pt-16 px-8 h-full flex flex-col justify-center items-center text-center">
+        <p class="text-gray-400 tracking-widest uppercase text-sm mb-4">Étudiant EPSI · B1</p>
+        <h1 class="text-6xl font-bold mb-6">Keenan Blet</h1>
+        <p class="text-gray-400 text-xl max-w-xl">
+            Développeur passionné, je conçois des expériences web modernes et des projets qui me ressemblent.
+        </p>
+
+        <a href="skills.html" class="mt-10 px-8 py-3 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-semibold rounded-full hover:bg-gray-200 hover:text-black transition">Mes compétences -></a>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-gray-500 text-sm py-8">
+        © 2026 Ton Nom — Tous droits réservés
+    </footer>
+
+</body>
+</html>

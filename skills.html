@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-white h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-gray-1000 to-slate-900">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 px-8 py-4 flex justify-between items-center">
+        <span class="text-xl font-bold">Keenan Blet</span>
+        <ul class="flex gap-8 text-sm">
+            <li><a href="index.html" class="hover:text-gray-400 transition">Accueil</a></li>
+            <li><a href="skills.html" class="hover:text-gray-400 transition">Compétences</a></li>
+            <li><a href="project.html" class="hover:text-gray-400 transition">Projets</a></li>
+            <li><a href="contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENU DE LA PAGE ICI -->
+    <main class="pt-16 px-8 h-full flex flex-col justify-center items-center text-center">
+        <h1 class="text-5xl font-bold mb-16">Mes compétences</h1>
+        <div class="flex gap-8">
+            <!-- Card 1 - Développement -->
+            <div class="h-96 w-96 p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex flex-col">
+                <h2 class="text-2xl font-bold mb-2">Développement</h2>
+                <p class="text-gray-400 text-sm mb-6">Création d'interfaces web modernes et de projets logiciels.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-orange-400/50 border border-white/20">HTML</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-blue-400/50 border border-white/20">CSS</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-yellow-400/50 border border-white/20">JavaScript</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-purple-400/50 border border-white/20">C++</span>
+                </div>
+                <div class="mt-auto pt-6 border-t border-white/10">
+                    <p class="text-gray-400 text-xs">Niveau actuel · B1 EPSI</p>
+                </div>
+            </div>
+
+            <!-- Card 2 - Outils -->
+            <div class="h-96 w-96 p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex flex-col">
+                <h2 class="text-2xl font-bold mb-2">Outils</h2>
+                <p class="text-gray-400 text-sm mb-6">Environnement de développement et gestion de versions.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-red-400/50 border border-white/20">Git</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-gray-400/50 border border-white/20">GitHub</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-blue-400/50 border border-white/20">VS Code</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-green-400/50 border border-white/20">Linux</span>
+                </div>
+                <div class="mt-auto pt-6 border-t border-white/10">
+                    <p class="text-gray-400 text-xs">Niveau actuel · B1 EPSI</p>
+                </div>
+            </div>
+
+            <!-- Card 3 - Base de données -->
+            <div class="h-96 w-96 p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex flex-col">
+                <h2 class="text-2xl font-bold mb-2">Base de données</h2>
+                <p class="text-gray-400 text-sm mb-6">Gestion et manipulation de bases de données relationnelles.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-blue-400/50 border border-white/20">SQL</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-orange-400/50 border border-white/20">MySQL</span>
+                    <span class="px-3 py-1 text-sm text-white rounded-md bg-green-400/50 border border-white/20">PhpMyAdmin</span>
+                </div>
+                <div class="mt-auto pt-6 border-t border-white/10">
+                    <p class="text-gray-400 text-xs">Niveau actuel · B1 EPSI</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <a href="index.html" class="mt-10 px-8 py-3 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-semibold rounded-full hover:bg-gray-200 hover:text-black transition"> <- Accueil </a>
+            <a href="project.html" class="mt-10 px-8 py-3 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-semibold rounded-full hover:bg-gray-200 hover:text-black transition">Mes projets -></a>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-gray-500 text-sm py-8">
+        © 2026 Ton Nom — Tous droits réservés
+    </footer>
+
+</body>
+</html>
