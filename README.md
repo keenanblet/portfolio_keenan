@@ -21,6 +21,7 @@ J’ai choisi ce parcours car je suis particulièrement intéressé par le déve
 * CSS3
 * Tailwind CSS
 * Font Awesome
+* GSAP
 
 ---
 
