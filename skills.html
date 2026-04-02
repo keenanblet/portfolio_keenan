@@ -36,8 +36,8 @@
       <nav class="relative flex justify-center py-4 px-10 bg-white/5 backdrop-blur-xl border border-white/10 text-white items-center w-full max-w-2xl rounded-full shadow-lg">
         <div class="flex gap-4 space-x-4">
           <a href="index.html">Accueil</a>
-          <a href="skills.html" class="px-4">compétences</a>
-          <a href="project.html" class="px-4">projets</a>
+          <a href="skills.html" class="px-4">Compétences</a>
+          <a href="project.html" class="px-4">Projets</a>
           <a href="contact.html">Me contacter</a>
         </div>
 
@@ -46,65 +46,79 @@
     </div>
 
     <!-- CONTENU DE LA PAGE ICI -->
-    <main class="pt-16 px-8 h-full flex flex-col justify-center items-center text-center">
-        <h1 class="text-7xl font-bold mb-16">Mes compétences</h1>
-        <div class="flex gap-8">
-            <!-- Card 1 - Développement -->
-            <div class="h-96 w-96 p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex flex-col">
-                <h2 class="text-2xl font-bold mb-2">Développement</h2>
-                <p class="text-gray-400 text-sm mb-6">Création d'interfaces web modernes et de projets logiciels.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-orange-400/50 border border-white/20">HTML</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-blue-400/50 border border-white/20">CSS</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-yellow-400/50 border border-white/20">JavaScript</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-purple-400/50 border border-white/20">C++</span>
-                </div>
-                <div class="mt-auto pt-6 border-t border-white/10">
-                    <p class="text-gray-400 text-xs">Niveau actuel · B1 EPSI</p>
-                </div>
-            </div>
+    <main class="min-h-screen flex flex-col justify-center px-8">
 
-            <!-- Card 2 - Outils -->
-            <div class="h-96 w-96 p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex flex-col">
-                <h2 class="text-2xl font-bold mb-2">Outils</h2>
-                <p class="text-gray-400 text-sm mb-6">Environnement de développement et gestion de versions.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-red-400/50 border border-white/20">Git</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-gray-400/50 border border-white/20">GitHub</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-blue-400/50 border border-white/20">VS Code</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-green-400/50 border border-white/20">Linux</span>
-                </div>
-                <div class="mt-auto pt-6 border-t border-white/10">
-                    <p class="text-gray-400 text-xs">Niveau actuel · B1 EPSI</p>
-                </div>
-            </div>
+        <h1 class="text-7xl font-bold mb-16 text-center">
+            Mes compétences
+        </h1>
 
-            <!-- Card 3 - Base de données -->
-            <div class="h-96 w-96 p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex flex-col">
-                <h2 class="text-2xl font-bold mb-2">Base de données</h2>
-                <p class="text-gray-400 text-sm mb-6">Gestion et manipulation de bases de données relationnelles.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-blue-400/50 border border-white/20">SQL</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-orange-400/50 border border-white/20">MySQL</span>
-                    <span class="px-3 py-1 text-sm text-white rounded-md bg-green-400/50 border border-white/20">PhpMyAdmin</span>
+        <div class="grid grid-cols-3 gap-6 h-[500px] max-w-6xl mx-auto">
+
+            <!-- GAUCHE (grand bloc) -->
+            <div class="col-span-1 row-span-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Développement</h2>
+                    <p class="text-gray-400 mb-6">
+                        Création d’interfaces modernes et projets web.
+                    </p>
                 </div>
-                <div class="mt-auto pt-6 border-t border-white/10">
-                    <p class="text-gray-400 text-xs">Niveau actuel · B1 EPSI</p>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-orange-400/20">HTML</span>
+                    <span class="px-3 py-1 rounded-full bg-blue-400/20">CSS</span>
+                    <span class="px-3 py-1 rounded-full bg-yellow-400/20">JavaScript</span>
+                    <span class="px-3 py-1 rounded-full bg-purple-400/20">C++</span>
                 </div>
 
             </div>
+
+            <!-- DROITE HAUT -->
+            <div class="col-span-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Outils</h2>
+                    <p class="text-gray-400 mb-6">
+                        Environnement de développement.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-red-400/20">Git</span>
+                    <span class="px-3 py-1 rounded-full bg-gray-400/20">GitHub</span>
+                    <span class="px-3 py-1 rounded-full bg-blue-400/20">VS Code</span>
+                    <span class="px-3 py-1 rounded-full bg-green-400/20">Linux</span>
+                </div>
+
+            </div>
+
+            <!-- DROITE BAS -->
+            <div class="col-span-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:bg-white/10 transition-all duration-300">
+
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Base de données</h2>
+                    <p class="text-gray-400 mb-6">
+                        Gestion et manipulation de données.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-blue-400/20">SQL</span>
+                    <span class="px-3 py-1 rounded-full bg-orange-400/20">MySQL</span>
+                    <span class="px-3 py-1 rounded-full bg-green-400/20">PhpMyAdmin</span>
+                </div>
+
+            </div>
+
         </div>
-        <div class="flex gap-4">
-            <a href="index.html" class="mt-10 px-8 py-3 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-semibold rounded-full hover:bg-gray-200 hover:text-black transition"> <- Accueil </a>
-            <a href="project.html" class="mt-10 px-8 py-3 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-semibold rounded-full hover:bg-gray-200 hover:text-black transition">Mes projets -></a>
+        <div class="flex gap-4 justify-center">
+            <a href="index.html" class="mt-10 px-8 py-3 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-semibold rounded-full hover:bg-gray-200 hover:text-black transition"> <- Accueil</a>
+            <a href="project.html" class="mt-10 px-8 py-3 bg-white/5 backdrop-blur-xl border border-white/10 text-white font-semibold rounded-full hover:bg-gray-200 hover:text-black transition">Mes Projets -></a>
         </div>
+
     </main>
 
 
-    <!-- FOOTER -->
-    <footer class="text-center text-gray-500 text-sm py-8">
-        © 2026 Ton Nom — Tous droits réservés
-    </footer>
 
 </body>
 </html>
